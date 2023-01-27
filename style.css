@@ -1,0 +1,84 @@
+#wrapper {
+    position:relative;
+    margin: 130px auto;
+    width: 600px;
+    height: 400px;
+    background: #050210;
+}
+
+#circle {
+    position: absolute;
+    top: 53px;
+    left: 143px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    filter:blur(20px);
+    animation-name: animation;
+    animation-duration: .9s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: .4;
+
+}
+
+#circle-1 {
+    position: absolute;
+    top: 79px;
+    left: 170px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    animation-name: my-animation;
+    animation-duration: .9s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}    
+
+#circle-2 {
+    position: absolute;
+    top: 79px;
+    left: 170px;
+    width: 250px;
+    height: 250px;
+    transform: scale(.85);
+    border-radius: 100%;
+    background: #060216;
+   
+}
+
+#circle-3 {
+    position: absolute;
+    top: 190px;
+    left: 280px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #140d30;
+    opacity: .6;
+    animation-name: my-animation-2;
+    animation-duration: 1.3s;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    filter: blur(.6px);
+}
+
+@keyframes my-animation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes animation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes my-animation-2 {
+    0% {transform: scale(0.3);}
+    100% {transform: scale(6.3);}
+}
